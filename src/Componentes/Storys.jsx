@@ -1,8 +1,10 @@
 function Storys(props){
     return(
-        <div className="Storys">
-           <img src={props.img} alt="" />
-           <p>{props.nome}</p>
+        <div className="storys">
+           <div className="borderStorys">
+              <img src={props.img} alt="" />
+           </div>
+            <p>{props.nome}</p>
         </div>
     )
 }

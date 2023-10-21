@@ -6,7 +6,7 @@ import ConteudoDireito from './Componentes/ConteudoDireito'
 function App() {
   
   return (
-    <main>
+    <main className='container'>
       <ConteudoEsquerdo/>
       <ConteudoCentral/>
       <ConteudoDireito/>

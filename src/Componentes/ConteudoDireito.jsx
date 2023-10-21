@@ -1,39 +1,63 @@
-import mccabelinho from '../assets/mccabelinho.jpg'
-import pique from '../assets/pique.webp'
-import cremosinho from '../assets/cremosinho.png'
-import Perfis from "./perfis";
-function ConteudoDireito() {
-  return (
-    <div className="ConteudoDireito">
-      <div className="seuperfil">
-         <Perfis></Perfis>
-      </div>
-      <div className="sugestao">
-        <p>Sugestões para ti</p>
-        <a href="#">Ver todas</a>
-      </div>
-      <div className="sugestoes">
-        <Perfis img={mccabelinho}
-        usuario={"mccabelinho"}
-        nome={"mc cabelinho"}
-        opcao={"Seguir"}></Perfis>
-        <Perfis img={pique}
-        usuario={"3gerardpique"}
-        nome={"Gerard Pique"}
-        opcao={"Seguir"}></Perfis>
-        <Perfis img={cremosinho}
-        usuario={"cremosinho"}
-        nome={"cremosinho"}
-        opcao={"Seguir"}></Perfis>
-        <Perfis></Perfis>
-        <Perfis></Perfis>
-      </div>
+import Itemdireito from "./Itemdireito"
+import adrian from "../assets/adrian.jpg"
+import cocielo from "../assets/cocielo.jpg"
+import program from "../assets/program.jpg"
+import sujeito from "../assets/sujeito.jpg"
+import jude from "../assets/jude.jpg"
+import gabs from "../assets/gabs.jpg"
+function ConteudoDireito(){
+    return(
+        <div className="conteudodireito">
+          <div className="perfil">
+          <Itemdireito img={adrian}
+          usuario={"adrian_almeida"}
+          nome={"Adrian Almeida"}
+          opcao={"mudar"}></Itemdireito>
+          </div>
+          <div className="sugestao">
+            <p>Sugestões para ti</p>
+            <a href="#">Ver todas</a>
+          </div>
+          <div className="seguir">
+            <Itemdireito img={cocielo} 
+            usuario={"cocielo"}
+            nome={"Júlio cocielo"}
+            opcao={"Seguir"}></Itemdireito>
+            <Itemdireito img={program}
+            usuario={"progbr"}
+            nome={"Igor Oliveira"}
+            opcao={"Seguir"}></Itemdireito>
+            <Itemdireito img={sujeito}
+            usuario={"sujeitoprogramador"}
+            nome={"Matheus Fraga"}
+            opcao={"Seguir"}></Itemdireito>
+            <Itemdireito img={jude}
+            usuario={"judebellingham"}
+            nome={"Jude Bellingham"}
+            opcao={"Seguir"}></Itemdireito>
+            <Itemdireito img={gabs}
+            usuario={"gab.augustoz"}
+            nome={"Gabriel Augusto"}
+            opcao={"Seguir"}></Itemdireito>
+          </div>
+          <footer>
+             <div className="infos">
+                <p>Sobre</p>
+                <p>ajuda</p>
+                <p>Imprensa</p>
+                <p>API</p>
+                <p>Empregos</p>
+                <p>Privacidade</p>
+                <p>Termos</p>
+                <p>Localização</p>
+                <p>Idiomas</p>
+                <p>Verificação</p>
+             </div>
+             <h5>&copy; INSTAGRAM FROM ADRIAN</h5>
+          </footer>
+        </div>
+    )
 
-      <footer>
-        <p>&copy; INSTAGRAM FROM ADRIAN</p>
-      </footer>
-    </div>
-  );
 }
 
-export default ConteudoDireito;
+export default ConteudoDireito
