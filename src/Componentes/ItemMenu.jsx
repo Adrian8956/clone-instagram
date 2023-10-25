@@ -1,10 +1,10 @@
 function ItemMenu(props){
-    return(
-        <div className="elementos">
-          <li className="icone">{props.icone}</li>
-          <li>{props.texto}</li>
-        </div>
-    )
+   return(
+    <div className="itens">
+    <span className="iconeMenu">{props.icone}</span>
+    <span className="nomeMenu">{props.nome}</span>
+    </div>
+   )
 }
 
 export default ItemMenu
